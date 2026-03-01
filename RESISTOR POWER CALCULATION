@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() 
+{
+    float resistance =220.0;
+    float voltage =12.0;
+    float power;
+    power = (voltage * voltage) / resistance;
+    printf("Resistor Power Calculator\n");
+    printf("=========================\n");
+    printf("Resistance (Ohms): %.2f\n", resistance);
+    printf("Voltage (Volts): %.2f\n", voltage); 
+    printf("Power (Watts): %.2f\n", power);
+    return 0;   
+}
