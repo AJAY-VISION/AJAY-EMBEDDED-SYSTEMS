@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    float voltage;
+
+    printf("Enter Voltage: ");
+    scanf("%f", &voltage);
+
+    if (voltage > 5.0) {
+        printf("Warning: Overvoltage! Risk of damage.\n");
+    }
+    else if (voltage < 3.0) {
+        printf("Warning: Undervoltage! System may be unstable.\n");
+    }
+    else {
+        printf("Voltage is SAFE for microcontroller.\n");
+    }
+
+    return 0;
+}
