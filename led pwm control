@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int pwm;
+
+    printf("Enter PWM value (0-255): ");
+    scanf("%d", &pwm);
+
+    if (pwm < 0 || pwm > 255) {
+        printf("Invalid PWM value!\n");
+    }
+    else if (pwm == 0) {
+        printf("LED Status: OFF\n");
+    }
+    else if (pwm <= 85) {
+        printf("LED Status: DIM\n");
+    }
+    else if (pwm <= 170) {
+        printf("LED Status: MEDIUM\n");
+    }
+    else {
+        printf("LED Status: BRIGHT\n");
+    }
+
+    return 0;
+}
